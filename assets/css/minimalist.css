@@ -1,185 +1,181 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Isabella Patterson | Portfolio</title>
-    <meta name="description" content="simple, minimalistic HTML-based portfolio webpage">
-    <meta name="author" content="Isabella Patterson">
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,300,600');
 
-    <!-- Mobile-friendly -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+/* HTML */
+html {
+  scroll-behavior: smooth;
+}
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+/* Body */
+body {
+  font-family: 'Raleway', sans-serif !important;
+}
 
-    <!-- Minimalist CSS -->
-    <link rel="stylesheet" href="assets/css/minimalist.css">
+/* Header and Section */
+header, section {
+  padding-top: 5rem;
+}
 
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+/* Anchors */
+a {
+  color: black;
+  text-decoration: underline;
+}
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+a:hover {
+  color: black;
+  background-image: linear-gradient(to right, black, black);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  text-decoration: none !important;
+}
 
-  </head>
-  <body>
-    <!-- User info -->
-    <header>
-      <!-- <div class="container">
-        <div class="row justify-content-lg-center">
-          <div class="col-lg-2 text-center">
-            <img src="https://placeimg.com/140/140/any" class="user-image rounded-circle" alt="Name Surname">
-          </div> -->
-          <div class="col-lg-2 text-center">
-            <h2>Isabella Patterson</h2>
-            <!-- <p class="text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris bibendum accumsan urna ut iaculis. Nunc vitae elit eget eros eleifend venenatis. Suspendisse lacinia risus id mauris cursus facilisis. Etiam faucibus consectetur egestas. Quisque porta nibh quis suscipit scelerisque. Nullam ut hendrerit orci.
-            </p> -->
-            <ul class="list-inline text-lg-right social-icons">
-              <li class="list-inline-item"><a href="https://github.com/ipgogra" target="_blank"><i class="fab fa-github"></i></a></li>
-              <li class="list-inline-item"><a href="https://www.linkedin.com/in/igpatterson/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-              <li class="list-inline-item"><a href="mailto:igpatte00@gmail.com" target="_blank"><i class="fas fa-at"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- Content -->
-    <section>
-      <!-- ./content-switch -->
-      <div class="d-flex justify-content-center">
-        <div class="list-group list-group-horizontal-md" id="content-tabs" role="tablist">
-          <a class="list-group-item small text-uppercase active" id="list-experience-list" data-toggle="list" href="#experience" role="tab">Experience</a>
-          <a class="list-group-item small text-uppercase" id="list-projects-list" data-toggle="list" href="#projects" role="tab">Projects</a>
-        </div>
-      </div>
-      <!-- ./content-switch -->
-      <!-- ./content-body -->
-      <div class="container pt-5 tab-content">
-        <!-- ./experience-panel-->
-        <div class="tab-pane fade show active" id="experience" role="tabpanel">
-          <div class="row justify-content-lg-center">
-            <div class="col-lg">
-              <!-- Timeline -->
-              <div class="timeline-container">
-                <div class="timeline-block timeline-block-right">
-                  <div class="marker"></div>
-                  <div class="timeline-content">
-                    <h3 class="timeline-h3">August 2021 - Present</h3>
-                    <span class="timeline-span">Associate Software Engineer</span>
-                    <p class="text-muted small mb-3">Ally Financial</p>
-                    <!-- <p class="timeline-p text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p> -->
-                  </div>
-                </div>
-            
-                <div class="timeline-block timeline-block-left">
-                  <div class="timeline-content">
-                    <h3 class="timeline-h3">January 2021 - August 2021</h3>
-                    <span class="timeline-span">Jr. Fullstack Developer</span>
-                    <p class="text-muted small mb-3">Brooksource</p>
-                    <!-- <p class="timeline-p text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p> -->
-                  </div>
-                  <div class="marker"></div>
-                </div>
-            
-                <div class="timeline-block timeline-block-right">
-                  <div class="marker"></div>
-                  <div class="timeline-content">
-                    <h3 class="timeline-h3">August 2020 - May 2021</h3>
-                    <span class="timeline-span">AI/ML Research Associate</span>
-                    <p class="text-muted small mb-3">U.S. Department of State, VSFS</p>
-                    <!-- <p class="timeline-p text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p> -->
-                  </div>
-                </div>
-            
-                <div class="timeline-block timeline-block-left">
-                  <div class="timeline-content">
-                    <h3 class="timeline-h3">January 2021 - Present</h3>
-                    <span class="timeline-span">MSc, Computer Science</span>
-                    <p class="text-muted small mb-3">UNC Charlotte</p>
-                    <p class="timeline-p text-justify">Computer Science Major | AI, Robotics, & Gaming Concentration</p>
-                  </div>
-                  <div class="marker"></div>
-                </div>
-            
-                <div class="timeline-block timeline-block-right">
-                  <div class="marker"></div>
-                  <div class="timeline-content">
-                    <h3 class="timeline-h3">August 2018 - December 2020</h3>
-                    <span class="timeline-span">BSc, Computer Science</span>
-                    <p class="text-muted small mb-3">UNC Charlotte</p>
-                    <p class="timeline-p text-justify">Computer Science Major | Data Science & Mathematics Double Minor | AI, Robotics, & Gaming Concentration</p>
-                  </div>
-                </div>
-              </div>
-              <!-- ./timeline -->
-            </div>
-          </div>
-        </div>
-        <!-- ./projects-panel-->
-        <div class="tab-pane fade show" id="projects" role="tabpanel">
-          <!-- TODO: Projects cards -->
-          <div class="row justify-content-lg-center">
-            <!-- ./project-1 -->
-            <div class="col-lg-8 pb-3">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">This section is a work in progress...</h4>
-                  <p class="card-text">Projects will be featured here (but in the meantime feel free to check out my GitHub repos below)</p>
-                  <ul class="list-inline social-icons">
-                    <!-- <li class="list-inline-item"><a href="#"><i class="fas fa-link"></i></a></li> -->
-                    <li class="list-inline-item"><a href="https://github.com/ipgogra?tab=repositories" target="_blank"><i class="fab fa-github"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Force next columns to break to new line -->
-            <!-- <div class="w-100"></div> -->
-            <!-- ./project-2 -->
-            <!-- <div class="col-lg-8 pb-3">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Project Title</h4>
-                  <p class="card-text">Project description, bla, bla, bla..</p>
-                  <ul class="list-inline social-icons">
-                    <li class="list-inline-item"><a href="#"><i class="fas fa-link"></i></a></li>
-                    <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div> -->
-            <!-- Force next columns to break to new line -->
-            <!-- <div class="w-100"></div> -->
-            <!-- ./project-3 -->
-            <!-- <div class="col-lg-8 pb-3">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Project Title</h4>
-                  <p class="card-text">Project description, bla, bla, bla..</p>
-                  <ul class="list-inline social-icons">
-                    <li class="list-inline-item"><a href="#"><i class="fas fa-link"></i></a></li>
-                    <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div> -->
-            <!-- Force next columns to break to new line -->
-            <!-- <div class="w-100"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="container text-center">
-        <p class="small">
-          <a href="https://github.com/ipgogra/igpatterson.github.io" target="_blank">portfolio</a> built with 🖤 and <a href="https://getbootstrap.com/" target="_blank">bootstrap</a>
-        </p>
-      </div>
-    </footer> -->
+/* Content tabs a */
+#content-tabs a {
+  text-decoration: none;
+}
 
-    <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  </body>
-</html>
+/* Social Icons a color */
+.social-icons a {
+  color: black!important;
+  background: none;
+}
+
+/* User Image */
+.user-image {
+  width: 140px;
+  height: 140px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+@media (max-width: 767px) {
+  header .col-lg-2 {
+    padding-bottom: 3rem;
+  }
+}
+
+/* Content Switcher */
+.list-group-item.active {
+  color: white!important;
+  background: black!important;
+  border-color: black!important;
+}
+
+.list-group a {
+  color: black!important;
+}
+
+/* Timeline */
+.timeline-container {
+  width: 100%;
+  padding: 50px 0;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.timeline-container:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -1px;
+  width: 2px;
+  height: 100%;
+  background: #CCD1D9;
+  z-index: 1
+}
+.timeline-block {
+  width: -webkit-calc(50% + 8px);
+  width: -moz-calc(50% + 8px);
+  width: calc(50% + 8px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  clear: both;
+}
+
+.timeline-block-right {
+  float: right;
+}
+
+.timeline-block-left {
+  float: left;
+  direction: ltr;
+}
+
+.marker {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background: white;
+  margin-top: 10px;
+  z-index: 9999
+}
+
+.timeline-content {
+  width: 100%;
+  padding: 0 15px;
+  color: black;
+}
+
+.timeline-block-left .timeline-content {
+ text-align:right;
+}
+
+.timeline-content .timeline-h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: 500
+}
+
+.timeline-content .timeline-span {
+  font-size: 15px;
+  color: #a4a4a4;
+}
+
+.timeline-content .timeline-p {
+  font-size: 14px;
+  line-height: 1.5em;
+  word-spacing: 1px;
+  color: black;
+}
+
+
+@media screen and (max-width: 768px) {
+  .timeline-container:before {
+    left: 8px;
+    width: 2px;
+  }
+
+  .timeline-block {
+     width: 100%;
+     margin-bottom: 30px;
+  }
+  .timeline-block-right {
+     float: none;
+  }
+
+  .timeline-block-left {
+     float: none;
+     direction: ltr;
+  }
+ 
+ .timeline-block-left .timeline-content {
+   text-align:left;
+   order: 2;
+ }
+ 
+ .timeline-block-left .marker {
+   order: 1;
+ }
+}
